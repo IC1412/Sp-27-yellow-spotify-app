@@ -31,19 +31,19 @@ export default function Index() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#ffffff',
+    backgroundColor: '#121212',
     alignItems: 'center',
     justifyContent: 'center',
     paddingHorizontal: 20,
   },
   title: {
-    color: '#121010',
+    color: '#FFF',
     fontSize: 40,
     fontWeight: 'bold',
     marginBottom: 10,
   },
   subtitle: {
-    color: '#555',
+    color: '#B3B3B3',
     fontSize: 18,
     marginBottom: 30,
   },
@@ -51,14 +51,14 @@ const styles = StyleSheet.create({
     width: '100%',
   },
   button: {
-    backgroundColor: '#e04545',
+    backgroundColor: '#1DB954',
     paddingVertical: 15,
     paddingHorizontal: 20,
     borderRadius: 8,
     marginBottom: 15,
   },
   buttonText: {
-    color: '#000',
+    color: '#121212',
     fontSize: 16,
     fontWeight: 'bold',
     textAlign: 'center',
