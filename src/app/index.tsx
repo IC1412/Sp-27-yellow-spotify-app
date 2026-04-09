@@ -1,7 +1,6 @@
 import { router } from 'expo-router';
 import { Pressable, StyleSheet, Text, View } from 'react-native';
 
-
 export default function Index() {
   return (
     <View style={styles.container}>
@@ -44,7 +43,7 @@ const styles = StyleSheet.create({
     marginBottom: 10,
   },
   subtitle: {
-    color: '#fff',
+    color: '#555',
     fontSize: 18,
     marginBottom: 30,
   },
