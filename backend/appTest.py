@@ -4,7 +4,12 @@ import spotipy
 from spotipy.oauth2 import SpotifyClientCredentials, SpotifyOAuth
 
 app = Flask(__name__)
-CORS(app)  # Allow requests from the frontend
+from flask_cors import CORS
+
+CORS(app, origins=[
+    "http://localhost:8081",  # Expo local
+    "https://sp-27-yellow-spotify-app.vercel.app"
+])
 
 CLIENT_ID = "9093ec5d53bb4551b7c66b0309a97a2f"
 CLIENT_SECRET = "45139b6bf8ee4b7e8149490c310a5834"
@@ -41,8 +46,7 @@ def search():
     except Exception as e:
         print("Spotify API error:", e)
         return jsonify({"error": str(e)}), 500
-
-
+    
 # Run server
 if __name__ == "__main__":
     app.run(host="0.0.0.0", port=8081, debug=True)
