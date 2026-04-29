@@ -60,7 +60,7 @@ export default function ExploreScreen() {
 
   const searchTracks = async () => {
     try {
-      const res = await fetch(`http://192.168.1.155:8081/search?q=${query}`);
+      const res = await fetch(`https://sp-27-yellow-spotify-app.onrender.com/search?q=${query}`);
      // const res = await fetch(
         //`https://sp-27-yellow-spotify-app.vercel.app/search?q=${query}`
       //);
