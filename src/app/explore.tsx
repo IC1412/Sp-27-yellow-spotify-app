@@ -13,7 +13,8 @@ export default function ExploreScreen() {
   // Search backend for tracks
   const searchTracks = async () => {
     try {
-      const res = await fetch(`http://192.168.1.155:8081/search?q=${query}`);
+      //CHANGE THIS BACK IF IT DOESNT WORK!!! const res = await fetch(`http://192.168.1.155:8081/search?q=${query}`);
+      const res = await fetch(`https://sp-27-yellow-spotify-app.vercel.app/search?q=${query}`);
       const data = await res.json();
       setTracks(data);
       setPlayingIndex(null);
