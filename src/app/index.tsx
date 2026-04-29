@@ -43,7 +43,11 @@ const styles = StyleSheet.create({
     marginBottom: 10,
   },
   subtitle: {
+<<<<<<< Updated upstream
     color: '#B3B3B3',
+=======
+    color: '#000', // fix visibility
+>>>>>>> Stashed changes
     fontSize: 18,
     marginBottom: 30,
   },

@@ -65,6 +65,11 @@ export default function ExploreScreen() {
     }
   };
 
+<<<<<<< Updated upstream
+=======
+
+export default function Explore() {
+>>>>>>> Stashed changes
   return (
     <View style={styles.container}>
       <TextInput
