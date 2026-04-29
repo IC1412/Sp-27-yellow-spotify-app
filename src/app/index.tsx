@@ -27,7 +27,7 @@ export default function Index() {
     </View>
   );
 }
-
+const res = await fetch(`https://sp-27-yellow-spotify-app.onrender.com/`);
 const styles = StyleSheet.create({
   container: {
     flex: 1,
